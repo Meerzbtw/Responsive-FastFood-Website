@@ -13,16 +13,17 @@ window.onscroll = () => {
 
 // Dark Mode
 let darkmode = document.querySelector('#darkmode');
+let cart =
 
-darkmode.onclick = () => {
-    if (darkmode.classList.contains('bx-moon')) {
-        darkmode.classList.replace('bx-moon', 'bx-sun');
-        document.body.classList.add('active');
-    } else {
-        darkmode.classList.replace('bx-sun', 'bx-moon');
-        document.body.classList.remove('active');
+    darkmode.onclick = () => {
+        if (darkmode.classList.contains('bx-moon')) {
+            darkmode.classList.replace('bx-moon', 'bx-sun');
+            document.body.classList.add('active');
+        } else {
+            darkmode.classList.replace('bx-sun', 'bx-moon');
+            document.body.classList.remove('active');
+        }
     }
-}
 
 // Scroll Reveal
 const sr = ScrollReveal({
@@ -37,5 +38,5 @@ sr.reveal(`.home-text, .home-img,
 .box, .s-box,
 .btn, .connect-text,
 .contact-box`, {
-    interval: 200
+    interval: 100
 })
